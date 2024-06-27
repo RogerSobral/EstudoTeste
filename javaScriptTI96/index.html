@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site de Música</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 1rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form textarea {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+        form button {
+            padding: 0.5rem;
+            font-size: 1rem;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .content {
+            margin-bottom: 5rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Meu Site de Música</h1>
+    <p>Bem-vindo ao meu mundo musical!</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre-mim">Sobre Mim</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#musica">Música</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <section id="home" class="content">
+        <h2>Home</h2>
+        <p>Bem-vindo ao meu site pessoal de música! Aqui você encontrará minhas performances, fotos e muito mais sobre minha jornada musical.</p>
+    </section>
+
+    <section id="sobre-mim" class="content">
+        <h2>Sobre Mim</h2>
+        <p>Olá! Eu sou [Seu Nome], um cantor apaixonado por música. Tenho me dedicado à música por [número de anos] anos e adoro compartilhar meu talento com o mundo.</p>
+    </section>
+
+    <section id="galeria" class="content gallery">
+        <h2>Galeria</h2>
+        <img src="https://via.placeholder.com/800x400" alt="Cantando">
+        <img src="https://via.placeholder.com/800x400" alt="Performance ao vivo">
+        <img src="https://via.placeholder.com/800x400" alt="No palco">
+    </section>
+
+    <section id="musica" class="content">
+        <h2>Música</h2>
+        <p>Aqui estão alguns links para minhas músicas e vídeos de performances:</p>
+        <ul>
+            <li><a href="#">Minha Música 1</a></li>
+            <li><a href="#">Minha Música 2</a></li>
+            <li><a href="#">Minha Música 3</a></li>
+        </ul>
+    </section>
+
+    <section id="contato" class="content">
+        <h2>Contato</h2>
+        <form>
+            <input type="text" name="name" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu Email" required>
+            <textarea name="message" rows="5" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Meu Site de Música. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
